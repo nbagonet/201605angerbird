@@ -1,0 +1,156 @@
+#shot
+{
+    z-index: 500;
+
+    .size(230rem/@r,380rem/@r);
+    .absolute(_,_,0,115rem/@r);
+    .translate(0,100%);
+    .transition(all 500ms ease);
+    // 显示 begin
+    &.show
+    {
+        .translate(0,0);
+    }
+    // 显示 end
+    // 主体 begin
+    #shot-main
+    {
+        z-index: 10;
+
+        overflow: hidden;
+
+        background: url('../img/shot/2.png') no-repeat 50% 50%;
+        background-size: cover;
+
+        .size(230rem/@r,244rem/@r);
+        .absolute(_,_,0,0);
+    }
+    // 主体 end
+    // 皮筋-默认 begin
+    #shot-trigger.off
+    {
+        z-index: 20;
+
+        background: url('../img/shot/0.png') no-repeat 50% 50%;
+        background-size: cover;
+
+        .size(196rem/@r,24rem/@r);
+        .absolute(_,_,207rem/@r,50%);
+        .translate(-50%,0);
+        // .transition(all 200ms ease);
+        // 鸟 begin
+        & + #shot-bird
+        {
+            .transform(translate3d(0,0,0) scale(1));
+        }
+        // 鸟 end
+    }
+    // 皮筋-默认 end
+    // 皮筋-拉下 begin
+    #shot-trigger.on
+    {
+        z-index: 20;
+
+        background: url('../img/shot/1.png') no-repeat 50% 50%;
+        background-size: cover;
+
+        .size(211rem/@r,53rem/@r);
+        .absolute(_,_,175rem/@r,50%);
+        .translate(-50%,0);
+        // .transition(all 200ms ease);
+        // 鸟 begin
+        & + #shot-bird
+        {
+            .transform(translate3d(0,10rem/@r,0) scale(1.2));
+        }
+        // 鸟 end
+    }
+    // 皮筋-拉下 end
+    // 准心 begin
+    #shot-point
+    {
+        z-index: 5;
+
+        background: url('../img/shot/3.png') no-repeat 50% 50%;
+        background-size: cover;
+
+        .size(105rem/@r);
+        .absolute(0,_,_,50%);
+        .translate(-50%);
+    }
+    // 准心 end
+    // 鸟 begin
+    #shot-bird
+    {
+        z-index: 15;
+
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+
+        .transition(all 200ms ease);
+        .size(229rem/@r/1.25,256rem/@r/1.25);
+        .absolute(_,_,100rem/@r,50%);
+        .margin(_,_,_,-229rem/@r/1.25/2);
+        .transform(translate3d(0,0,0));
+        transform-style: preserve-3d;
+        // 红 begin
+        &.shot-bird-red
+        {
+            background-image: url('../img/birds/0.png');
+        }
+        // 红 end
+        // 黑 begin
+        &.shot-bird-black
+        {
+            background-image: url('../img/birds/2.png');
+        }
+        // 黑 end
+        // 黄 begin
+        &.shot-bird-yellow
+        {
+            background-image: url('../img/birds/4.png');
+        }
+        // 黄 end
+        // 飞。。。 begin
+        &.flying
+        {
+            .animation(bird-flying 500ms ease-in-out forwards);
+        }
+        @keyframes bird-flying
+        {
+            0%
+            {
+                z-index: 15;
+
+                .transform(translate3d(0,10rem/@r,0) scale(1.2));
+            }
+            50%
+            {
+                z-index: 6;
+
+                .transform(translate3d(0,-200rem/@r,0) scale(.75));
+            }
+            100%
+            {
+                z-index: 3;
+
+                .transform(translate3d(0,-130rem/@r,0) scale(.5));
+            }
+        }
+        // 飞。。。 end
+    }
+    // 鸟 end
+    // 提示 begin
+    #shot-tips
+    {
+        z-index: 1;
+
+        background: url('../img/tips/5.png') no-repeat 50% 50%;
+        background-size: cover;
+
+        .size(253rem/@r,91rem/@r);
+        .absolute(100rem/@r,_,_,110%);
+    }
+    // 提示 end
+}

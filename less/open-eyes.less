@@ -1,0 +1,19 @@
+#open-eyes
+{
+    z-index: 5000;
+
+    background-color: #000;
+
+    .fixed(0,0,0,0);
+    &.nobg
+    {
+        background-color: rgba(0,0,0,0);
+    }
+    img
+    {
+        z-index: 1;
+
+        .absolute(0,0,0,0);
+        .size(100%);
+    }
+}

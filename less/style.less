@@ -1,0 +1,466 @@
+@import '../bower_components/est/src/all.less';
+
+@r: 64;
+@vh: 10.08;
+@vw: 6.4;
+
+// 初始化css样式
+.global-normalize();
+
+*
+{
+    box-sizing: border-box;
+
+    .margin(0);
+    .padding(0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body
+{
+    overflow: hidden;
+
+    .size(100%);
+}
+html,
+body
+{
+    font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+    // font-size: 24rem/@r;
+    line-height: 1;
+    // color: #fff;
+    // background-color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+}
+ul,
+ol,
+li,
+p,
+dl,
+dt,
+dd,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    .margin(0);
+    .padding(0);
+}
+ol,
+ul
+{
+    list-style: none;
+}
+
+/** 移除html5 input在type="number"时的控制按钮 begin */
+// // chrome:
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button
+// {
+//     margin: 0;
+//
+//     -webkit-appearance: none !important;
+// }
+// // firefox
+// input[type='number']
+// {
+//     -moz-appearance: textfield;
+// }
+/** 移除html5 input在type="number"时的控制按钮 end */
+
+input,
+textarea,
+select
+{
+    -webkit-appearance: none;
+}
+// button,
+// input,
+// select,
+// textarea
+// {
+//     font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+// }
+a
+{
+    .transition(all 200ms ease-in-out);
+    &,
+    &:link,
+    &:hover,
+    &:active,
+    &:focus
+    {
+        text-decoration: none;
+
+        outline: none;
+    }
+}
+.hide
+{
+    opacity: 0!important;
+}
+.none
+{
+    display: none!important;
+}
+img,
+div,
+span
+{
+    .user-select(none);
+}
+
+@import './pace.less';
+@import './3d.less';
+@import './open-eyes.less';
+@import './shot.less';
+@import './clip.less';
+@import './full-tips.less';
+
+
+
+// 后续页面。。。
+#award-0
+{
+    position: relative;
+
+    background: url('../img/bg/bg-award-0.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .size(100%);
+}
+#award-1
+{
+    position: relative;
+
+    background: url('../img/bg/bg-award-1.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .size(100%);
+}
+#award-2
+{
+    position: relative;
+
+    background: url('../img/bg/bg-award-2.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .size(100%);
+}
+#award-3
+{
+    position: relative;
+
+    background: url('../img/bg/bg-award-3.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .size(100%);
+}
+#game-fail
+{
+    position: relative;
+
+    background: url('../img/bg/bg-fail.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .size(100%);
+}
+#award-noaward
+{
+    position: relative;
+
+    background: url('../img/bg/bg-noaward.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .size(100%);
+}
+#post-succ
+{
+    position: relative;
+
+    background: url('../img/bg/info-succ.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .size(100%);
+}
+#pop-share
+{
+    z-index: 20000;
+
+    background: url('../img/share.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .absolute(0,0,0,0);
+}
+.btn-get-award
+{
+    text-align: center;
+
+    .absolute(_,0,0,0);
+    .padding(_,_,35rem/@r);
+    img
+    {
+        width: 284rem/@r;
+    }
+}
+.btn-2r
+{
+    .absolute(_,0,0,0);
+    .padding(_,30rem/@r,35rem/@r);
+    .display(flex);
+    .align-items(center);
+    .justify-content(center);
+    a
+    {
+        text-align: center;
+
+        .flex(1);
+    }
+    img
+    {
+        width: 241rem/@r;
+    }
+}
+
+.form
+{
+    position: relative;
+
+    background: url('../img/bg/bg-base.jpg') no-repeat 50% 0%;
+    background-size: cover;
+    // .absolute(0,0,0,0);
+
+    // overflow-y: auto;
+
+    > form
+    {
+        .display(flex);
+        .flex-direction(column);
+        .size(100%,100vh);
+        .padding(100rem/@r,_,35rem/@r);
+    }
+    &.inputFocus
+    {
+        // top:-1vh;
+    }
+    .title
+    {
+        background: url('../img/txt/0.png') no-repeat 50% 50%;
+        background-size: auto 100%;
+
+        .size(100%,70rem/@r);
+        .margin(_,auto,70rem/@r);
+    }
+    .content
+    {
+        height: 100%;
+
+        .flex(1);
+        .display(flex);
+        .flex-direction(column);
+    }
+    .form-control
+    {
+        .display(flex);
+        .align-items(center);
+        .margin(_,auto,40rem/@r);
+        .size(440rem/@r,auto);
+        &:last-child
+        {
+            .margin(_,_,auto,_);
+        }
+        label
+        {
+            width: 160rem/@r;
+
+            .padding(_,40rem/@r,_,_);
+            img
+            {
+                display: block;
+
+                width: 100%;
+            }
+        }
+        input
+        {
+            font-size: 32rem/@r;
+
+            display: block;
+
+            border: 5rem/@r #127795 solid;
+            outline: none;
+            background-color: #fff;
+
+            .size(250rem/@r,75rem/@r);
+            .border-radius(14rem/@r);
+            .padding(_,.5em);
+        }
+    }
+    .form-btn
+    {
+        button
+        {
+            display: block;
+            overflow: hidden;
+
+            text-indent: -9999px;
+
+            border: 0;
+            background: url('../img/button/4.png') no-repeat 50% 50%;
+            background-size: cover;
+
+            .size(284rem/@r,117rem/@r);
+            .padding(0);
+            .margin(_,auto);
+        }
+    }
+}
+
+
+// debug
+#debug
+{
+    font-size: 12px;
+    line-height: 1.4;
+
+    z-index: 60000;
+
+    display: none;
+
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+
+    .absolute(0,_,_,0);
+    .padding(10px);
+}
+
+// ^(*￣(oo)￣)^shake
+.clock
+{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    animation-fill-mode: both;
+}
+#clock-4,
+#clock-5
+{
+    animation-name: clockShake1;
+}
+#clock-0,
+#clock-1
+{
+    animation-name: clockShake2;
+}
+@keyframes clockShake1
+{
+    from,
+    to
+    {
+        margin-left: 0;
+    }
+    10%,
+    30%,
+    50%
+    {
+        margin-left: -5px;
+    }
+    20%,
+    40%
+    {
+        margin-left: 5px;
+    }
+    60%
+    {
+        margin-left: 0;
+    }
+}
+@keyframes clockShake2
+{
+    from,
+    to
+    {
+        margin-left: 0;
+    }
+    10%,
+    30%,
+    50%
+    {
+        margin-top: -5px;
+    }
+    20%,
+    40%
+    {
+        margin-top: 5px;
+    }
+    60%
+    {
+        margin-top: 0;
+    }
+}
+
+// audio player
+#bgmusic
+{
+    z-index: 1000;
+
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    .absolute(10rem/@r,10rem/@r,_,_);
+    .size(44rem/@r);
+    &.on
+    {
+        background-image: url('../img/music_on.png');
+
+        .animation(rotate 1s linear infinite);
+    }
+    &.off
+    {
+        background-image: url('../img/music_off.png');
+    }
+}
+@keyframes rotate
+{
+    from
+    {
+        .rotate(0deg);
+    }
+    to
+    {
+        .rotate(360deg);
+    }
+}
+
+
+// 起始页
+#start
+{
+    z-index: 100;
+
+    background: url('../img/start.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+    .absolute(0,0,0,0);
+    .size(100%);
+    > a
+    {
+        z-index: 1000;
+
+        .absolute(_,_,25rem/@r,50%);
+        .translate(-50%,0);
+        img
+        {
+            width: 253rem/@r;
+        }
+    }
+}

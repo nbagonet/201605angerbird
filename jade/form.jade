@@ -1,0 +1,29 @@
+extend layout
+
+block content
+  
+  //- 表单
+  .form
+    form(action="succ.html" method="post")
+
+      //- 标题栏
+      .title
+        
+      //- 内容
+      .content
+        .form-control
+          label(for="name")
+            img(src="../img/txt/1.png")
+          input#name(type="text" name="name" placeholder="" value="")
+        .form-control
+          label(for="tel")
+            img(src="../img/txt/2.png")
+          input#tel(type="tel" name="tel" placeholder="" value="")
+        .form-control
+          label(for="addr")
+            img(src="../img/txt/3.png")
+          input#addr(type="text" name="addr" placeholder="" value="")
+        
+      //- 按钮
+      .form-btn
+        button(type="submit") 提交

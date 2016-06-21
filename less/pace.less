@@ -1,0 +1,27 @@
+.pace
+{
+    z-index: 20000;
+
+    overflow: hidden;
+
+    background-color: #000;
+
+    .fixed(0,0,0,0);
+    &:after
+    {
+        font-size: 32rem/@r;
+
+        content: '加载中，请稍候...';
+
+        color: #fff;
+
+        .display(flex);
+        .align-items(center);
+        .justify-content(center);
+        .size(100%);
+    }
+    &.pace-inactive
+    {
+        display: none;
+    }
+}

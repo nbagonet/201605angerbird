@@ -1,0 +1,64 @@
+// 弹夹 begin
+#clip
+{
+    z-index: 10;
+
+    pointer-events: none;
+
+    .absolute(_,15rem/@r,30rem/@r,_);
+    .display(flex);
+    .align-items(flex-end);
+    .justify-content(flex-end);
+    .translate(0,120%);
+    .transition(all 700ms ease);
+    // 显示 begin
+    &.show
+    {
+        .translate(0,0);
+    }
+    // 显示 end
+    .clip-item
+    {
+        height: 256rem/@r*.4;
+
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: contain;
+
+        .margin(_,_,_,10rem/@r);
+        .transition(all 200ms ease);
+        // 当前使用的子弹 begin
+        &.current
+        {
+            // transform-origin: center bottom;
+
+            // .scale(1.5);
+        }
+        // 当前使用的子弹 end
+        // 当前子弹已使用 begin
+        &.empty{
+          opacity: .75;
+          filter:grayscale();
+        }
+        // 当前子弹已使用 end
+        &.shot-bird-red
+        {
+            width: 160rem/@r*.4;
+
+            background-image: url('../img/birds/1.png');
+        }
+        &.shot-bird-black
+        {
+            width: 229rem/@r*.4;
+
+            background-image: url('../img/birds/3.png');
+        }
+        &.shot-bird-yellow
+        {
+            width: 215rem/@r*.4;
+
+            background-image: url('../img/birds/5.png');
+        }
+    }
+}
+// 弹夹 end

@@ -1,0 +1,76 @@
+#full-tips
+{
+    z-index: 50000;
+
+    .absolute(0,0,0,0);
+    > div
+    {
+        background-repeat: no-repeat;
+        background-position: 50% 100rem/@r;
+        background-size: 476rem/@r auto;
+
+        .size(100%);
+    }
+    // 命中 begin
+    #tips-hit-0
+    {
+        background-image: url('../img/tips/0.png');
+    }
+    #tips-hit-1
+    {
+        background-image: url('../img/tips/1.png');
+    }
+    #tips-hit-2
+    {
+        background-image: url('../img/tips/2.png');
+    }
+    // 命中 end
+    // 未命中 begin
+    #tips-nohit-0
+    {
+        background-image: url('../img/tips/3.png');
+    }
+    #tips-nohit-1
+    {
+        background-image: url('../img/tips/4.png');
+    }
+    // 未命中 end
+    // 弹夹满 begin
+    #tips-full-0
+    {
+        background-image: url('../img/tips/6.png');
+    }
+    // 弹夹满 end
+    // 空罐 begin
+    #tips-empty-0
+    {
+        background-image: url('../img/tips/7.png');
+    }
+    // 空罐 end
+    // 空弹夹 begin
+    #tips-empty-clip{
+      background-image: url('../img/tips/8.png');
+    }
+    // 空弹夹 end
+}
+
+// ajax begin
+#tips-ajax-post
+{
+    font-size: 32rem/@r;
+
+    z-index: 60000;
+
+    color: #fff;
+    background-color: rgba(0,0,0,.75);
+
+    .absolute(0,0,0,0);
+    .display(flex);
+    .align-items(center);
+    .justify-content(center);
+    &:after
+    {
+        content: '正在提交，请稍候…';
+    }
+}
+// ajax end

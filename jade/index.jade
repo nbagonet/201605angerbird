@@ -1,0 +1,91 @@
+extend layout
+
+block resHead
+  // !!!!!!!!!! 请注意，只有游戏页面有这个<script>，预加载资源使用，其它页面请勿添加，游戏页面请勿删除 !!!!!!!!!!
+  script(data-pace-options='{ "ajax": false }' src="../js/pace.min.js")
+  //- link(href="../css/animate.css" rel="stylesheet")
+
+block content
+  
+  //- 素材
+  .preloadRes.none
+    //- 场景
+    each img in ['../img/scene_3d/negx-1024.png','../img/scene_3d/negy-1024.png','../img/scene_3d/negz-1024.png','../img/scene_3d/posx-1024.png','../img/scene_3d/posy-1024.png','../img/scene_3d/posz-1024.png']
+      img(src="#{img}")
+    //- 睁眼动画
+    //- - for(var i = 0; i < 12; i ++)
+    //-   img(src="../img/open_eyes/#{i}.png")
+    //- 鸟
+    - for(var i=0;i<6;i++)
+      img(src="../img/birds/#{i}.png")
+    //- 猪和奶
+    img(src="../img/target/clock.png")
+    img(src="../img/target/milk-1.png")
+    img(src="../img/target/milk-2.png")
+    //- 弹弓
+    - for (var i=0;i<4;i++)
+      img(src="../img/shot/#{i}.png")
+    //- 提示语
+    - for (var i=0;i<9;i++)
+      img(src="../img/tips/#{i}.png")
+  
+  // 背景音乐
+  #bgmusic.on
+    audio#music(src="../img/bg.mp3" autoplay loop preload)
+  
+  //- 音效
+  //- .none
+    //- audio#audio-shot(data-push="../img/push.mp3" data-shot="../img/shot.mp3" src="")
+  
+  //- 睁眼
+  #open-eyes
+    - for(var i = 0; i < 12; i ++)
+      - var _eyeClass = 'none'
+      - if (i === 0)
+        - _eyeClass = ''
+      - if (i === 0 || i === 1 || i === 2 || i === 3 || i === 5)
+        - for(var j = 0; j < 6; j++)
+          img(src="../img/open_eyes/#{i}.png" class="#{_eyeClass}")
+      - else
+        img(src="../img/open_eyes/#{i}.png" class="#{_eyeClass}")
+  
+  //- 3D全景场景
+  #quanjing
+
+  //- 弹弓
+  #shot
+    //- 提示
+    #shot-tips
+    //- 主体
+    #shot-main
+    //- 准心
+    #shot-point
+    //- 皮筋
+    #shot-trigger.off
+    //- 鸟
+    #shot-bird
+      
+  //- 弹夹
+  #clip
+    .clip-item.shot-bird-red
+    .clip-item.shot-bird-black
+    .clip-item.shot-bird-yellow
+
+  //- 全屏提示
+  #full-tips.none
+    //- 命中
+    #tips-hit-0.none
+    #tips-hit-1.none
+    #tips-hit-2.none
+    //- 未命中
+    #tips-nohit-0.none
+    #tips-nohit-1.none
+    //- 弹夹满
+    #tips-full-0.none
+    //- 空罐
+    #tips-empty-0.none
+    //- 空弹夹
+    #tips-empty-clip.none
+  
+  //- ajax提交游戏结果数据
+  #tips-ajax-post.none

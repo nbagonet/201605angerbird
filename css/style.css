@@ -1,0 +1,1217 @@
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+       Base
+       ========================================================================== */
+/**
+     * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+     *    `em` units.
+     * 2. Prevent iOS text size adjust after orientation change, without disabling
+     *    user zoom.
+     */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+     * Address `font-family` inconsistency between `textarea` and other form
+     * elements.
+     */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+/**
+     * Address margins handled incorrectly in IE 6/7.
+     */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+       Links
+       ========================================================================== */
+/**
+     * Address `outline` inconsistency between Chrome and other browsers.
+     */
+a:focus {
+  outline: thin dotted;
+}
+/**
+     * Improve readability when focused and also mouse hovered in all browsers.
+     */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+       Typography
+       ========================================================================== */
+/**
+     * Address font sizes and margins set differently in IE 6/7.
+     * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+     * and Chrome.
+     */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+/**
+     * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+     */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+     * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+     */
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+/**
+     * Address styling not present in Safari 5 and Chrome.
+     */
+dfn {
+  font-style: italic;
+}
+/**
+     * Address differences between Firefox and other browsers.
+     * Known issue: no IE 6/7 normalization.
+     */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+     * Address margins set differently in IE 6/7.
+     */
+p,
+pre {
+  margin: 1em 0;
+}
+/**
+     * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+     */
+code,
+kbd,
+pre,
+samp {
+  font-family: Monaco, Consolas, monospace;
+  font-size: 1em;
+}
+/**
+     * Improve readability of pre-formatted text in all browsers.
+     */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/**
+     * Address CSS quotes not supported in IE 6/7.
+     */
+q {
+  quotes: none;
+}
+/**
+     * Address `quotes` property not supported in Safari 4.
+     */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/**
+     * Address inconsistent and variable font size in all browsers.
+     */
+small {
+  font-size: 80%;
+}
+/**
+     * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+     */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+       Lists
+       ========================================================================== */
+/**
+     * Address margins set differently in IE 6/7.
+     */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+/**
+     * Address paddings set differently in IE 6/7.
+     */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+/**
+     * Correct list images handled incorrectly in IE 7.
+     */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* ==========================================================================
+       Embedded content
+       ========================================================================== */
+/**
+     * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+     * 2. Improve image quality when scaled in IE 7.
+     */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+/**
+     * Correct overflow displayed oddly in IE 9.
+     */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+       Forms
+       ========================================================================== */
+/**
+     * Correct margin displayed oddly in IE 6/7.
+     */
+form {
+  margin: 0;
+}
+/**
+     * Define consistent border, margin, and padding.
+     */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+     * 1. Correct color not being inherited in IE 6/7/8/9.
+     * 2. Correct text not wrapping in Firefox 3.
+     * 3. Correct alignment displayed oddly in IE 6/7.
+     */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+/**
+     * 1. Correct font size not being inherited in all browsers.
+     * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+     *    and Chrome.
+     * 3. Improve appearance and consistency in all browsers.
+     */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+/**
+     * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+     * the UA stylesheet.
+     */
+button,
+input {
+  line-height: normal;
+}
+/**
+     * Address inconsistent `text-transform` inheritance for `button` and `select`.
+     * All other form control elements do not inherit `text-transform` values.
+     * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+     * Correct `select` style inheritance in Firefox 4+ and Opera.
+     */
+button,
+select {
+  text-transform: none;
+}
+/**
+     * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+     *    and `video` controls.
+     * 2. Correct inability to style clickable `input` types in iOS.
+     * 3. Improve usability and consistency of cursor style between image-type
+     *    `input` and others.
+     * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+     *    Known issue: inner spacing remains in IE 6.
+     */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+/**
+     * Re-set default cursor for disabled elements.
+     */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+     * 1. Address box sizing set to content-box in IE 8/9.
+     * 2. Remove excess padding in IE 8/9.
+     * 3. Remove excess padding in IE 7.
+     *    Known issue: excess padding remains in IE 6.
+     */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+/**
+     * Remove inner padding and border in Firefox 3+.
+     */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+     * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+     * 2. Improve readability and alignment in all browsers.
+     */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+/* ==========================================================================
+       Tables
+       ========================================================================== */
+/**
+     * Remove most spacing between table cells.
+     */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ==========================================================================
+       HTML5 display definitions
+       ========================================================================== */
+/**
+     * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+     */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+     * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+     */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/**
+     * Prevent modern browsers from displaying `audio` without controls.
+     * Remove excess height in iOS 5 devices.
+     */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+     * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+     * Known issue: no IE 6 support.
+     */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+       Typography
+       ========================================================================== */
+/**
+     * Address styling not present in IE 6/7/8/9.
+     */
+mark {
+  background: #ff0;
+  color: #666;
+}
+/* ==========================================================================
+       Figures
+       ========================================================================== */
+/**
+     * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+     */
+figure {
+  margin: 0;
+}
+/**
+     * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+     * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+     *    (include `-moz` to future-proof).
+     */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+/**
+     * Remove inner padding and search cancel button in Safari 5 and Chrome
+     * on OS X.
+     */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+ul,
+ol,
+li,
+p,
+dl,
+dt,
+dd,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+/** 移除html5 input在type="number"时的控制按钮 begin */
+/** 移除html5 input在type="number"时的控制按钮 end */
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+}
+a {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+a,
+a:link,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+.hide {
+  opacity: 0!important;
+}
+.none {
+  display: none!important;
+}
+img,
+div,
+span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.pace {
+  z-index: 20000;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.pace:after {
+  font-size: 0.5rem;
+  content: '加载中，请稍候...';
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.pace.pace-inactive {
+  display: none;
+}
+.section3D {
+  width: 1030px;
+  height: 1030px;
+}
+/**
+ * 闹钟
+ */
+.clock {
+  z-index: 10;
+}
+/**
+ * 奶
+ */
+.milk {
+  z-index: 20;
+}
+#open-eyes {
+  z-index: 5000;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#open-eyes.nobg {
+  background-color: rgba(0, 0, 0, 0);
+}
+#open-eyes img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#shot {
+  z-index: 500;
+  width: 3.59375rem;
+  height: 5.9375rem;
+  position: absolute;
+  bottom: 0;
+  left: 1.796875rem;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+#shot.show {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+#shot #shot-main {
+  z-index: 10;
+  overflow: hidden;
+  background: url('../img/shot/2.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 3.59375rem;
+  height: 3.8125rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#shot #shot-trigger.off {
+  z-index: 20;
+  background: url('../img/shot/0.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 3.0625rem;
+  height: 0.375rem;
+  position: absolute;
+  bottom: 3.234375rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+#shot #shot-trigger.off + #shot-bird {
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
+}
+#shot #shot-trigger.on {
+  z-index: 20;
+  background: url('../img/shot/1.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 3.296875rem;
+  height: 0.828125rem;
+  position: absolute;
+  bottom: 2.734375rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+#shot #shot-trigger.on + #shot-bird {
+  -webkit-transform: translate3d(0, 0.15625rem, 0) scale(1.2);
+          transform: translate3d(0, 0.15625rem, 0) scale(1.2);
+}
+#shot #shot-point {
+  z-index: 5;
+  background: url('../img/shot/3.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 1.640625rem;
+  height: 1.640625rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+#shot #shot-bird {
+  z-index: 15;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  width: 2.8625rem;
+  height: 3.2rem;
+  position: absolute;
+  bottom: 1.5625rem;
+  left: 50%;
+  margin-left: -1.43125rem;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+#shot #shot-bird.shot-bird-red {
+  background-image: url('../img/birds/0.png');
+}
+#shot #shot-bird.shot-bird-black {
+  background-image: url('../img/birds/2.png');
+}
+#shot #shot-bird.shot-bird-yellow {
+  background-image: url('../img/birds/4.png');
+}
+#shot #shot-bird.flying {
+  -webkit-animation: bird-flying 500ms ease-in-out forwards;
+          animation: bird-flying 500ms ease-in-out forwards;
+}
+@-webkit-keyframes bird-flying {
+  0% {
+    z-index: 15;
+    -webkit-transform: translate3d(0, 0.15625rem, 0) scale(1.2);
+            transform: translate3d(0, 0.15625rem, 0) scale(1.2);
+  }
+  50% {
+    z-index: 6;
+    -webkit-transform: translate3d(0, -3.125rem, 0) scale(0.75);
+            transform: translate3d(0, -3.125rem, 0) scale(0.75);
+  }
+  100% {
+    z-index: 3;
+    -webkit-transform: translate3d(0, -2.03125rem, 0) scale(0.5);
+            transform: translate3d(0, -2.03125rem, 0) scale(0.5);
+  }
+}
+@keyframes bird-flying {
+  0% {
+    z-index: 15;
+    -webkit-transform: translate3d(0, 0.15625rem, 0) scale(1.2);
+            transform: translate3d(0, 0.15625rem, 0) scale(1.2);
+  }
+  50% {
+    z-index: 6;
+    -webkit-transform: translate3d(0, -3.125rem, 0) scale(0.75);
+            transform: translate3d(0, -3.125rem, 0) scale(0.75);
+  }
+  100% {
+    z-index: 3;
+    -webkit-transform: translate3d(0, -2.03125rem, 0) scale(0.5);
+            transform: translate3d(0, -2.03125rem, 0) scale(0.5);
+  }
+}
+#shot #shot-tips {
+  z-index: 1;
+  background: url('../img/tips/5.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 3.953125rem;
+  height: 1.421875rem;
+  position: absolute;
+  top: 1.5625rem;
+  left: 110%;
+}
+#clip {
+  z-index: 10;
+  pointer-events: none;
+  position: absolute;
+  right: 0.234375rem;
+  bottom: 0.46875rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+#clip.show {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+#clip .clip-item {
+  height: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: contain;
+  margin-left: 0.15625rem;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+#clip .clip-item.empty {
+  opacity: .75;
+  -webkit-filter: grayscale();
+          filter: grayscale();
+}
+#clip .clip-item.shot-bird-red {
+  width: 1rem;
+  background-image: url('../img/birds/1.png');
+}
+#clip .clip-item.shot-bird-black {
+  width: 1.43125rem;
+  background-image: url('../img/birds/3.png');
+}
+#clip .clip-item.shot-bird-yellow {
+  width: 1.34375rem;
+  background-image: url('../img/birds/5.png');
+}
+#full-tips {
+  z-index: 50000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#full-tips > div {
+  background-repeat: no-repeat;
+  background-position: 50% 1.5625rem;
+  background-size: 7.4375rem auto;
+  width: 100%;
+  height: 100%;
+}
+#full-tips #tips-hit-0 {
+  background-image: url('../img/tips/0.png');
+}
+#full-tips #tips-hit-1 {
+  background-image: url('../img/tips/1.png');
+}
+#full-tips #tips-hit-2 {
+  background-image: url('../img/tips/2.png');
+}
+#full-tips #tips-nohit-0 {
+  background-image: url('../img/tips/3.png');
+}
+#full-tips #tips-nohit-1 {
+  background-image: url('../img/tips/4.png');
+}
+#full-tips #tips-full-0 {
+  background-image: url('../img/tips/6.png');
+}
+#full-tips #tips-empty-0 {
+  background-image: url('../img/tips/7.png');
+}
+#full-tips #tips-empty-clip {
+  background-image: url('../img/tips/8.png');
+}
+#tips-ajax-post {
+  font-size: 0.5rem;
+  z-index: 60000;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#tips-ajax-post:after {
+  content: '正在提交，请稍候…';
+}
+#award-0 {
+  position: relative;
+  background: url('../img/bg/bg-award-0.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#award-1 {
+  position: relative;
+  background: url('../img/bg/bg-award-1.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#award-2 {
+  position: relative;
+  background: url('../img/bg/bg-award-2.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#award-3 {
+  position: relative;
+  background: url('../img/bg/bg-award-3.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#game-fail {
+  position: relative;
+  background: url('../img/bg/bg-fail.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#award-noaward {
+  position: relative;
+  background: url('../img/bg/bg-noaward.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#post-succ {
+  position: relative;
+  background: url('../img/bg/info-succ.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#pop-share {
+  z-index: 20000;
+  background: url('../img/share.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.btn-get-award {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 0.546875rem;
+}
+.btn-get-award img {
+  width: 4.4375rem;
+}
+.btn-2r {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-right: 0.46875rem;
+  padding-bottom: 0.546875rem;
+  padding-left: 0.46875rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.btn-2r a {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.btn-2r img {
+  width: 3.765625rem;
+}
+.form {
+  position: relative;
+  background: url('../img/bg/bg-base.jpg') no-repeat 50% 0%;
+  background-size: cover;
+}
+.form > form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 1.5625rem;
+  padding-bottom: 0.546875rem;
+}
+.form .title {
+  background: url('../img/txt/0.png') no-repeat 50% 50%;
+  background-size: auto 100%;
+  width: 100%;
+  height: 1.09375rem;
+  margin-right: auto;
+  margin-bottom: 1.09375rem;
+  margin-left: auto;
+}
+.form .content {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form .form-control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-bottom: 0.625rem;
+  margin-left: auto;
+  width: 6.875rem;
+  height: auto;
+}
+.form .form-control:last-child {
+  margin-bottom: auto;
+}
+.form .form-control label {
+  width: 2.5rem;
+  padding-right: 0.625rem;
+}
+.form .form-control label img {
+  display: block;
+  width: 100%;
+}
+.form .form-control input {
+  font-size: 0.5rem;
+  display: block;
+  border: 0.078125rem #127795 solid;
+  outline: none;
+  background-color: #fff;
+  width: 3.90625rem;
+  height: 1.171875rem;
+  border-radius: 0.21875rem;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+.form .form-btn button {
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  border: 0;
+  background: url('../img/button/4.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 4.4375rem;
+  height: 1.828125rem;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+#debug {
+  font-size: 12px;
+  line-height: 1.4;
+  z-index: 60000;
+  display: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.clock {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+#clock-4,
+#clock-5 {
+  -webkit-animation-name: clockShake1;
+          animation-name: clockShake1;
+}
+#clock-0,
+#clock-1 {
+  -webkit-animation-name: clockShake2;
+          animation-name: clockShake2;
+}
+@-webkit-keyframes clockShake1 {
+  from,
+  to {
+    margin-left: 0;
+  }
+  10%,
+  30%,
+  50% {
+    margin-left: -5px;
+  }
+  20%,
+  40% {
+    margin-left: 5px;
+  }
+  60% {
+    margin-left: 0;
+  }
+}
+@keyframes clockShake1 {
+  from,
+  to {
+    margin-left: 0;
+  }
+  10%,
+  30%,
+  50% {
+    margin-left: -5px;
+  }
+  20%,
+  40% {
+    margin-left: 5px;
+  }
+  60% {
+    margin-left: 0;
+  }
+}
+@-webkit-keyframes clockShake2 {
+  from,
+  to {
+    margin-left: 0;
+  }
+  10%,
+  30%,
+  50% {
+    margin-top: -5px;
+  }
+  20%,
+  40% {
+    margin-top: 5px;
+  }
+  60% {
+    margin-top: 0;
+  }
+}
+@keyframes clockShake2 {
+  from,
+  to {
+    margin-left: 0;
+  }
+  10%,
+  30%,
+  50% {
+    margin-top: -5px;
+  }
+  20%,
+  40% {
+    margin-top: 5px;
+  }
+  60% {
+    margin-top: 0;
+  }
+}
+#bgmusic {
+  z-index: 1000;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0.15625rem;
+  right: 0.15625rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
+}
+#bgmusic.on {
+  background-image: url('../img/music_on.png');
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+}
+#bgmusic.off {
+  background-image: url('../img/music_off.png');
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+#start {
+  z-index: 100;
+  background: url('../img/start.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#start > a {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0.390625rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+#start > a img {
+  width: 3.953125rem;
+}
